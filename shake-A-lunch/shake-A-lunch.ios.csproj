@@ -120,9 +120,15 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-172.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-196.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\shake-phone-icon-216.png" />
+    <ImageAsset Include="Assets.xcassets\Lunch.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Lunch.imageset\restaurant.png" />
+    <ImageAsset Include="Assets.xcassets\Lunch.imageset\restaurant%402x.png" />
+    <ImageAsset Include="Assets.xcassets\Lunch.imageset\restaurant%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Controller\" />
+    <Folder Include="Assets.xcassets\Lunch.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -136,13 +142,21 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="MainViewController.cs" />
-    <Compile Include="MainViewController.designer.cs">
+    <Compile Include="Controller\AddLocationViewController.cs" />
+    <Compile Include="Controller\AddLocationViewController.designer.cs">
+      <DependentUpon>AddLocationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\MainViewController.cs" />
+    <Compile Include="Controller\MainViewController.designer.cs">
       <DependentUpon>MainViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddLocationViewController.cs" />
-    <Compile Include="AddLocationViewController.designer.cs">
-      <DependentUpon>AddLocationViewController.cs</DependentUpon>
+    <Compile Include="TableViewCellLunch.cs" />
+    <Compile Include="TableViewCellLunch.designer.cs">
+      <DependentUpon>TableViewCellLunch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\LunchTableViewController.cs" />
+    <Compile Include="Controller\LunchTableViewController.designer.cs">
+      <DependentUpon>LunchTableViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

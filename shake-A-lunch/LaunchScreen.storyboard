@@ -26,6 +26,9 @@
                                 <size key="shadowOffset" width="1" height="3"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3923" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" image="Lunch">
+                                <rect key="frame" x="87" y="454" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint id="216" firstItem="215" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX"/>
@@ -34,6 +37,8 @@
                             <constraint id="219" firstItem="215" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin"/>
                             <constraint id="220" firstItem="215" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin"/>
                             <constraint id="221" firstItem="215" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin"/>
+                            <constraint id="3950" firstItem="3923" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX"/>
+                            <constraint id="3977" firstItem="3923" firstAttribute="top" secondItem="215" secondAttribute="bottom" constant="39"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -42,4 +47,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Lunch" width="30" height="30"/>
+    </resources>
 </document>

@@ -5,4 +5,7 @@
     <RootNamespace>shake_A_lunch.std</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>

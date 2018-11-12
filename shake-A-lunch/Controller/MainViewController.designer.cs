@@ -16,10 +16,19 @@ namespace shakeAlunch
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton ButtonAccept { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel LabelLunch { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (ButtonAccept != null) {
+                ButtonAccept.Dispose ();
+                ButtonAccept = null;
+            }
+
             if (LabelLunch != null) {
                 LabelLunch.Dispose ();
                 LabelLunch = null;

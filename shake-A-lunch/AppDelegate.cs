@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using shake_A_lunch.std;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using shake_A_lunch.std.Models;
 
 namespace shakeAlunch
 {
@@ -35,7 +36,7 @@ namespace shakeAlunch
                 using (var sr = file.OpenText())
                 {
                     var data = await sr.ReadToEndAsync();
-                    var obj = JsonConvert.DeserializeObject<List<string>>(data);
+                    var obj = JsonConvert.DeserializeObject<List<Location>>(data);
                     AppStore.Instance.Locations = obj;
                 }
             });

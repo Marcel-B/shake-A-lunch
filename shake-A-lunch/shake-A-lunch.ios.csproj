@@ -90,6 +90,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Essentials">
+      <HintPath>..\packages\Xamarin.Essentials.0.11.0-preview\lib\xamarinios10\Xamarin.Essentials.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
@@ -124,11 +127,21 @@
     <ImageAsset Include="Assets.xcassets\Lunch.imageset\restaurant.png" />
     <ImageAsset Include="Assets.xcassets\Lunch.imageset\restaurant%402x.png" />
     <ImageAsset Include="Assets.xcassets\Lunch.imageset\restaurant%403x.png" />
+    <ImageAsset Include="Assets.xcassets\Trash.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Trash.imageset\trash.png" />
+    <ImageAsset Include="Assets.xcassets\Trash.imageset\trash%402x.png" />
+    <ImageAsset Include="Assets.xcassets\Trash.imageset\trash%403x.png" />
+    <ImageAsset Include="Assets.xcassets\Bin.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Bin.imageset\bin.png" />
+    <ImageAsset Include="Assets.xcassets\Bin.imageset\bin%402x.png" />
+    <ImageAsset Include="Assets.xcassets\Bin.imageset\bin%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="Controller\" />
     <Folder Include="Assets.xcassets\Lunch.imageset\" />
+    <Folder Include="Assets.xcassets\Trash.imageset\" />
+    <Folder Include="Assets.xcassets\Bin.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

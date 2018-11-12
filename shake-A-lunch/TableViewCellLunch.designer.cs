@@ -16,10 +16,19 @@ namespace shakeAlunch
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel LabelCount { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel LabelLunch { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (LabelCount != null) {
+                LabelCount.Dispose ();
+                LabelCount = null;
+            }
+
             if (LabelLunch != null) {
                 LabelLunch.Dispose ();
                 LabelLunch = null;

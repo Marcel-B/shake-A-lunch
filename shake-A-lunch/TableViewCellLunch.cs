@@ -10,6 +10,11 @@ namespace shakeAlunch
             get => LabelLunch.Text;
             set => LabelLunch.Text = value;
         }
+        public string Counter
+        {
+            get => LabelCount.Text;
+            set => LabelCount.Text = value;
+        }
         public TableViewCellLunch(IntPtr handle) : base(handle) { }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using shake_A_lunch.std.Models;
 
 namespace shake_A_lunch.std
 {
@@ -7,13 +8,13 @@ namespace shake_A_lunch.std
     {
         protected AppStore()
         {
-            Locations = new List<string>();
+            Locations = new List<Location>();
             Rnd = new Random(DateTime.Now.Millisecond);
         }
 
         static readonly Lazy<AppStore> instance = new Lazy<AppStore>(() => new AppStore());
         public static AppStore Instance => instance.Value;
-        public IList<string> Locations { get; set; }
+        public List<Location> Locations { get; set; }
         public Random Rnd { get; set; }
     }
 }
